@@ -21,7 +21,8 @@ const SelectCategory = () => {
     <div className='grid grid-cols-3 gap-10'>
         {CategoryList.map((c, index) => (
             <div className={`flex flex-col p-5 border items-center
-            rounded-xl hover:border-primary hover:bg-blue-300 cursor-pointer ${userCourseInput?.category == c.name && 'border-primary bg-blue-50 '}`}
+            rounded-xl hover:border-primary hover:bg-blue-300 cursor-pointer 
+            ${userCourseInput?.category == c.name && 'border-primary bg-blue-50 '}`}
             onClick={() => handleCategoryChange(c.name)}>
                 <Image src={c.icon} width={55} height={55}
                 className='rounded'
